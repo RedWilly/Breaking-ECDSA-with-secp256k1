@@ -51,11 +51,14 @@ It is also worth noting that the script provided is intended for educational pur
 
 ## breakV2.py
 
-In the optimized version of the script provided, the time.sleep(120) function is called to sleep for a short period of time (120 seconds) whenever the CPU usage exceeds the desired limit (70% in this case). This allows the script to use only a specified percentage of the available processing power, which can help to prevent the script from overloading the system and allow it to run indefinitely.
+breakV2.py is the optimized version of the script provided, the time.sleep(120) function is called to sleep for a short period of time (120 seconds) whenever the CPU usage exceeds the desired limit (70% in this case). This allows the script to use only a specified percentage of the available processing power, which can help to prevent the script from overloading the system and allow it to run indefinitely.
 
 The script will wake up and continue execution as soon as the time.sleep function returns, which will be after the specified sleep duration (120 seconds in this case) has elapsed. The script will then check the CPU usage again and sleep again if necessary, until the CPU usage falls below the desired limit.
 
 It is worth noting that the sleep duration (120 seconds in this case) is chosen arbitrarily, and can be adjusted to achieve the desired level of CPU usage. A shorter sleep duration will result in the script using more of the available processing power, while a longer sleep duration will result in the script using less of the available processing power.
+```
+pip install psutil
+```
 
 
 We welcome contributions to this project! Here are a few ways you can help:
